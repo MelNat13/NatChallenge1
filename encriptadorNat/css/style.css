@@ -1,0 +1,136 @@
+
+
+*{
+
+    background: #F3F5FC;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo__header{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+.principal{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+ 
+}
+
+.text__area{
+    border: none;
+    color: #0A3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+
+::placeholder{ color: #0A3871;
+    .text__area:focus{
+        outline: none;
+    }
+
+}
+
+.text__area__msj{
+    background: white;
+    background-image: url(/img/Muñeco.png);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: absolute;
+}
+
+.text__area__msj:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+
+}
+
+.btn__encriptar{  
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+
+
+}
+
+.btn__desencriptar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+
+}
+
+
+.copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 408;
+    position: absolute;
+    bottom: 0; /* VER POSICION BOTON COPIAR*/
+    width: 336px;
+  
+}
+
+.msj__alerta{
+   font-family: Inter;
+   color: #495057;
+   font-size: 18px;
+}
+
+footer{
+    font-family: Inter;
+    color: #0A3871;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .body{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .principal{
+        display: flex;
+        flex-direction: column;
+    }
+    .text__area{
+        width: 100%;
+    }
+
+    .desencriptador{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copiar{
+        top: 90%;
+    }
+    
+}

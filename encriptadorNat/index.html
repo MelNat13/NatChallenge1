@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de textos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<title>Proyecto Alura Natalia</title>
+</head>
+<header>
+    <section>
+        <img src="./img/Logo.png" alt="logo" class="logo__header">
+    </section>
+</header>
+<body>
+    
+    <main class="principal">
+        <section>
+            
+            <section class="encriptador">
+                <textarea class="text__area" cols="30" rows="10" placeholder="Ingrese el texto aqui" ></textarea>  
+                <div>
+                    <div class="msj__alerta"><img src="./img/exclamation.png" alt="alert__icon"> Solo letras minúsculas y sin acentos</div>
+                </div>
+                <div class="botones">
+                    <button class="btn__encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn__desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+
+        </section>
+        
+        <section class="desencriptador">
+            <textarea class="text__area__msj" id="text__msj" cols="20" rows="10"></textarea>
+            <!--<h3>Ningún mensaje fue encontrado</h3>
+            <h4>Ingresa el texto que desees encriptar o desencriptar.</h4> -->
+            <div>
+                <button class="copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+       <p class="rodapie"> © Nat - 2024</p> 
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

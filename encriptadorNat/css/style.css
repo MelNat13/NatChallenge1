@@ -9,6 +9,7 @@
     line-height: 150%;
 }
 
+
 .logo__header{
     padding-top: 10px;
     margin-left: 10px;
@@ -40,18 +41,19 @@
     background: white;
     background-image: url(/img/Muñeco.png);
     background-repeat: no-repeat;
+    background-position: center;
     border: none;
     border-radius: 24px;
     color: #0A3871;
     margin-left: 98px;
     margin-top: 20px;
     padding-left: 20px;
-    position: absolute;
+    
 }
 
-.text__area__msj:focus{
+/* .text__area__msj:focus{
     outline: none;
-}
+} */
 
 .botones{
     display: flex;
@@ -92,7 +94,7 @@
     height: 67px;
     margin-left: 108px;
     margin-top: 408;
-    position: absolute;
+    position: static;
     bottom: 0; /* VER POSICION BOTON COPIAR*/
     width: 336px;
   
@@ -106,14 +108,22 @@
 
 footer{
     font-family: Inter;
+    font-size: small;
     color: #0A3871;
     text-align: center;
+    
 }
 
-@media screen and (max-width: 768px) {
+
+
+
+/*TABLET y MÓVIL*/
+
+@media (min-width: 380px ) and (max-width: 800px) {
     .body{
         display: flex;
         flex-direction: column;
+        
     }
     
     .principal{
@@ -121,16 +131,46 @@ footer{
         flex-direction: column;
     }
     .text__area{
-        width: 100%;
+        width: 60%;
+    }
+    .text__area__msj{
+        justify-content: center;
+        width: 60%;
+        margin-left: 0;
     }
 
     .desencriptador{
         display: flex;
         flex-direction: column;
+      
     }
+
+    .botones{
+        
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5%
+
+    }
+    
+    .btn__desencriptar{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
 
     .copiar{
         top: 90%;
+        margin-top: 20px;
+        margin-left: 5%;
     }
     
+    footer{
+        text-align: start;
+        margin-left: 25%;
+    }
+    
+
 }
+
+
